@@ -18,7 +18,7 @@ export default class Root extends Component<Props> {
   render = () => (
     <I18nextProvider i18n={i18n}>
       <Provider store={store}>
-        <Suspense fallback={<div>Loading</div>}>
+        <Suspense fallback={<div />}>
           <Prompt />
         </Suspense>
       </Provider>
