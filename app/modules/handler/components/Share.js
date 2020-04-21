@@ -32,22 +32,22 @@ class PromptShare extends Component<Props> {
         style={{ marginTop: '110px' }}
         scrolling
       >
-        <Modal.Header>EOSIO Signing Request (EEP-7)</Modal.Header>
+        <Modal.Header>{t('handler_share_header')}</Modal.Header>
         <Modal.Content>
           <Header>
             <Header.Subheader>
-              A benefit of using the <strong>EOSIO Signing Request</strong> protocol is that you can share the link with those you trust and verify what actions it will perform before signing.
+              {t('handler_share_subheader')}
             </Header.Subheader>
           </Header>
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column>
                 <Header attached="top" size="small">
-                  Share Request as a Link
+                  {t('handler_share_grid_header_one')}
                 </Header>
                 <Segment attached="bottom">
                   <p>
-                    This text box contains the raw link (URI) of this specific transaction. You can share this link with other users to ask questions or to just share the transaction.
+                    {t('handler_share_grid_paragraph_one')}
                   </p>
                   <Form>
                     <Form.TextArea
@@ -68,14 +68,14 @@ class PromptShare extends Component<Props> {
                 </Segment>
               </Grid.Column>
               <Grid.Column>
-                <Header attached="top" size="small">View/Share using EOSIO.TO</Header>
+                <Header attached="top" size="small">{t('handler_share_grid_header_two')}</Header>
                 <Segment attached="bottom">
-                  <p>You can also open this signing request using the service found at https://eosio.to using the button below. This site provides a secondary source of information to verify the contents of the URI. This link can also safely be shared with others to view the contents of the transaction.</p>
+                  <p>{t('handler_share_grid_paragraph_two')}</p>
                   <GlobalDangerLink
                     content={(
                       <Button
                         color="blue"
-                        content="Open Link to EOSIO.TO"
+                        content={t('handler_share_grid_button')}
                         fluid
                         icon="external"
                       />
