@@ -17,6 +17,7 @@ class PromptStageSuccess extends Component<Props> {
       hasForegroundCallback,
       prompt,
       settings,
+      t,
     } = this.props;
     const {
       response,
@@ -48,13 +49,16 @@ class PromptStageSuccess extends Component<Props> {
                 >
                   <Icon color="green" name="check circle outline" />
                   <Header.Content>
-                    Transaction Submitted
+                    {t('handler_containers_stage_success_header')}
                     <Header.Subheader>
-                      The transaction was successfuly sent to the
-                      {(response && response.processed)
-                        ? ' blockchain.'
-                        : ' callback service.'
-                      }
+                      {t(
+                        'handler_containers_stage_success_subheader',
+                        {
+                          responseProcessed: response && response.processed ?
+                            t('handler_containers_stage_success_subheader_blockchain') :
+                            t('handler_containers_stage_success_subheader_callback_service'),
+                        }
+                      )}
                     </Header.Subheader>
                   </Header.Content>
                 </Header>
@@ -99,7 +103,7 @@ class PromptStageSuccess extends Component<Props> {
                         content={(
                           <React.Fragment>
                             <p>
-                              The Transaction ID listed above can be used to monitor this transaction. The service it was submitted to is responsible for ensuring the transaction makes it into the greater blockchain network.
+                              {t('handler_containers_stage_success_message_one')}
                             </p>
                           </React.Fragment>
                         )}
@@ -114,7 +118,7 @@ class PromptStageSuccess extends Component<Props> {
                         content={(
                           <React.Fragment>
                             <p>
-                              This transaction has been signed and submitted to the callback URL listed above. It has NOT been broadcast to the blockchain, and depending on the type of transaction, its the responsibility of the application listening to the callback to complete the transaction.
+                              {t('handler_containers_stage_success_message_two')}
                             </p>
                           </React.Fragment>
                         )}
