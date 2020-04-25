@@ -134,7 +134,7 @@ class ToolsHome extends Component<Props> {
         <Segment style={{ margin: '0 0 15px' }}>
           <p>
             <Button
-              content={t('main_components_tools_home_button')}
+              content={t('main_sections_tools_home_button')}
               icon="external"
               name="tools/v1"
               onClick={this.onClick}
@@ -159,7 +159,7 @@ class ToolsHome extends Component<Props> {
                       const reason = (
                         <div>
                           <p>
-                            {t('main_components_tools_home_paragraph_one')}
+                            {t('main_sections_tools_home_paragraph_one')}
                           </p>
                           <List>
                             {item.modes
@@ -168,7 +168,7 @@ class ToolsHome extends Component<Props> {
                                 <List.Item content={`${String(type).toUpperCase()} Wallet`} />)}
                           </List>
                           <p>
-                            {t('main_components_tools_home_paragraph_two')}
+                            {t('main_sections_tools_home_paragraph_two')}
                           </p>
                         </div>
                       );

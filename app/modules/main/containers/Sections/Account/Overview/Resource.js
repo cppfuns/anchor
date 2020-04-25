@@ -63,7 +63,7 @@ class AccountOverviewResource extends Component<Props> {
                       >
                         <div
                           dangerouslySetInnerHTML={{
-                            __html: t('main_components_overview_resource_grid_subheader_one')
+                            __html: t('main_sections_overview_resource_grid_subheader_one')
                           }}
                         />
                       </Header.Subheader>
@@ -82,7 +82,7 @@ class AccountOverviewResource extends Component<Props> {
                       >
                         <div
                           dangerouslySetInnerHTML={{
-                            __html: t('main_components_overview_resource_grid_subheader_two')
+                            __html: t('main_sections_overview_resource_grid_subheader_two')
                           }}
                         />
                       </Header.Subheader>
@@ -103,8 +103,8 @@ class AccountOverviewResource extends Component<Props> {
                       />
                       <Header.Subheader>
                         {(settings.displayResourcesAvailable)
-                          ? t('main_components_overview_resource_grid_subheader_three_available')
-                          : t('main_components_overview_resource_grid_subheader_three_available')
+                          ? t('main_sections_overview_resource_grid_subheader_three_available')
+                          : t('main_sections_overview_resource_grid_subheader_three_available')
                         }
                         {resource.toUpperCase()}
                       </Header.Subheader>
@@ -187,7 +187,7 @@ class AccountOverviewResource extends Component<Props> {
                       />
                       <Header.Subheader>
                         {t(
-                          'main_components_overview_resource_grid_subheader_four',
+                          'main_sections_overview_resource_grid_subheader_four',
                           { resource: resource.toUpperCase() }
                         )}
                       </Header.Subheader>
@@ -209,12 +209,12 @@ class AccountOverviewResource extends Component<Props> {
                       <Table.Row>
                         <Table.Cell collapsing textAlign="right">
                           <Popup
-                            content={t('main_components_overview_resource_table_popup_one_content')}
+                            content={t('main_sections_overview_resource_table_popup_one_content')}
                             inverted
                             position="center left"
                             trigger={(
                               <span>
-                                {t('main_components_overview_resource_table_popup_one_trigger')}
+                                {t('main_sections_overview_resource_table_popup_one_trigger')}
                                 <Icon color="grey" name="circle help" style={{ margin: '0 0 0 0.5em' }} />
                               </span>
                             )}
@@ -233,12 +233,12 @@ class AccountOverviewResource extends Component<Props> {
                       <Table.Row>
                         <Table.Cell collapsing textAlign="right">
                           <Popup
-                            content={t('main_components_overview_resource_table_popup_two_content')}
+                            content={t('main_sections_overview_resource_table_popup_two_content')}
                             inverted
                             position="center left"
                             trigger={(
                               <span>
-                                {t('main_components_overview_resource_table_popup_two_trigger')}
+                                {t('main_sections_overview_resource_table_popup_two_trigger')}
                                 <Icon color="grey" name="circle help" style={{ margin: '0 0 0 0.5em' }} />
                               </span>
                             )}
@@ -257,12 +257,12 @@ class AccountOverviewResource extends Component<Props> {
                       <Table.Row>
                         <Table.Cell collapsing textAlign="right">
                           <Popup
-                            content={t('main_components_overview_resource_table_popup_three_content')}
+                            content={t('main_sections_overview_resource_table_popup_three_content')}
                             inverted
                             position="center left"
                             trigger={(
                               <span>
-                                {t('main_components_overview_resource_table_popup_three_trigger')}
+                                {t('main_sections_overview_resource_table_popup_three_trigger')}
                                 <Icon color="grey" name="circle help" style={{ margin: '0 0 0 0.5em' }} />
                               </span>
                             )}
